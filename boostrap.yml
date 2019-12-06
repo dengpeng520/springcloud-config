@@ -3,9 +3,13 @@ spring:
   profiles: dev     #开发环境
   application: 
     name: microservicecloud-config-dev
+server:
+  port: 8500
 ---
 spring:
   profiles: test   #测试环境
   application: 
     name: microservicecloud-config-test
+server:
+  port: 8600
 #  请保存为UTF-8格式
